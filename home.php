@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 
@@ -12,7 +12,7 @@ session_start();
         <link rel="stylesheet"
               href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <style>
-            
+           
             *{
                 padding: 0;
                 margin: 0;
@@ -21,34 +21,29 @@ session_start();
                 text-decoration: none;
                 list-style: none;
             }
-            
+           
             body{
                 background-image: url(https://wallpapercave.com/wp/wp6934543.png);
                 width: 100%;
                 height: 100%;
-                background-size: cover;
             }
-            
+           
             header{
-                position: fixed;
                 width: 100%;
-                top: 0;
-                right: 0;
-                z-index: 1000;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 20px 15%;
+                padding: 20px;
                 background: transparent;
             }
-            
-            
-        
-            
+           
+           
+       
+           
             .navbar{
                 display: flex;      
             }
-            
+           
             .navbar a{
                 font-size: 20px;
                 padding: 5px 10px;
@@ -57,23 +52,27 @@ session_start();
                 transition: all .45s ease;
                 border-radius: 5px;
             }
-            
+            .logo {
+             display: flex;
+             align-items: center;
+             
+            }
+           
             .logo a{
-                margin-left: -170px;
                 color: #fff;
                 font-size: 20px;
             }
-            
+           
             .navbar a:hover{
-                background: #18191A; 
+                background: #18191A;
             }
-            
+           
             .header-btn a{
                 padding: 5px 10px;
                 color: #fff;
                 font-size: 15px;
             }
-            
+           
             .header-btn .registrati{
                 background: #18191A;
                 border: 2px solid transparent;
@@ -84,7 +83,7 @@ session_start();
                 border: 2px solid #18191A;
                 background: transparent;
             }
-            
+           
             #menu-icon{
                 font-size: 30px;
                 z-index: 10001;
@@ -92,8 +91,8 @@ session_start();
                 cursor: pointer;
                 display: none;
             }
-            
-            
+           
+           
            
 
         </style>
@@ -101,24 +100,21 @@ session_start();
 
     <body>
         <header>
-            
+           
             <div class="logo">
-                <a href="#"><img src="./image/logo.png"/></a> 
+                <a href="#"><img src="./image/logo.png" style="width: 50px;height: 50px"></a>
+                <a href="#" style="padding-left: 5px">Spotyfake</a>
             </div>
-            
-            <div class="logo" style="margin-left: -160px;">
-                <a href="#">Spotyfake</a>
-            </div>
-            
+           
             <div class="bx bx-menu" id="menu-icon"></div>
-            
+           
             <ul class="navbar">
                 <a href="ricerca.php">Ricerca canzone</a>
                 <a href="insCanzone.php">Aggiungi canzone</a>
                 <a href="insPlaylist.php">Aggiungi playlist</a>
                 <a href="playlistStorage.php">Le mie playlist</a>
             </ul>
-            
+           
             <div class="header-btn">
                 <a href="login.php" class="accedi">Accedi</a>
                 <a href="registrazione.php" class="registrati">Registrati</a>
