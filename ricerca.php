@@ -33,14 +33,8 @@ $con = 0;
                 $resultset = mysqli_query($db_conn, $query);
                 if (mysqli_num_rows($resultset) > 0) {
                     while ($row = mysqli_fetch_assoc($resultset)) {
-                        ?>
-                        <video src="uploads/<?= $row['video_url'] ?>" 
-                               controls>
-
-                        </video>
-                        <?php
+                      
                         $con += 1;
-                        $idCanzone = $row["idCanzone"];
                         $titolo = utf8_decode($row["titolo"]);
                         $autore = utf8_decode($row["autore"]);
                         $genere = utf8_decode($row["genere"]);
@@ -50,6 +44,10 @@ $con = 0;
                         <th><?php echo $titolo ?></th>
                         <th><?php echo $autore ?></th>
                         <th><?php echo $genere ?></th>
+                        <video src="uploads/<?= $row['video_url'] ?>" 
+                               controls>
+
+                        </video>
                     </tr>
                     <?php
                 }
