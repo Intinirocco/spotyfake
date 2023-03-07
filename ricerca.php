@@ -44,10 +44,10 @@ $con = 0;
                         <th><?php echo $titolo ?></th>
                         <th><?php echo $autore ?></th>
                         <th><?php echo $genere ?></th>
-                        <video src="uploads/<?= $row['video_url'] ?>" 
+                        <audio src="uploads/<?= $row['video_url'] ?>" 
                                controls>
 
-                        </video>
+                        </audio>
                     </tr>
                     <?php
                 }
